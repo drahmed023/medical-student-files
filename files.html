@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملفات - منصة طلبة الطب</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">منصة طلبة الطب</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="files.html">الملفات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="upload.html">رفع ملف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">التصنيفات</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="ابحث عن ملفات...">
+                    <button class="btn btn-outline-light" type="submit">بحث</button>
+                </form>
+                <div class="dropdown ms-3">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown">
+                        <i class="fas fa-user-circle me-1"></i> محمد أحمد
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">الملف الشخصي</a></li>
+                        <li><a class="dropdown-item" href="my-files.html">ملفاتي</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>الملفات الدراسية</h2>
+            <a href="upload.html" class="btn btn-primary">
+                <i class="fas fa-upload me-1"></i> رفع ملف جديد
+            </a>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <select class="form-select">
+                        <option selected>كل التصنيفات</option>
+                        <option>تشريح</option>
+                        <option>فسيولوجيا</option>
+                        <option>كيمياء حيوية</option>
+                        <option>أمراض</option>
+                        <option>صيدلة</option>
+                    </select>
+                    <select class="form-select">
+                        <option selected>كل السنوات</option>
+                        <option>السنة الأولى</option>
+                        <option>السنة الثانية</option>
+                        <option>السنة الثالثة</option>
+                        <option>السنة الرابعة</option>
+                        <option>السنة الخامسة</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-header bg-light">
+                        <span class="badge bg-success">السنة الثانية</span>
+                        <span class="badge bg-info ms-1">تشريح</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ملخص تشريح الطرف العلوي</h5>
+                        <p class="card-text text-muted">ملخص شامل لمحاضرات تشريح الطرف العلوي مع رسومات توضيحية.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">تم الرفع: 3 أيام مضت</small>
+                            <span class="badge bg-secondary">PDF</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fas fa-download"></i> تحميل</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fas fa-info-circle"></i> التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-header bg-light">
+                        <span class="badge bg-warning text-dark">السنة الثالثة</span>
+                        <span class="badge bg-info ms-1">فسيولوجيا</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">أسئلة فسيولوجيا الجهاز الهضمي</h5>
+                        <p class="card-text text-muted">مجموعة أسئلة مع إجاباتها عن فسيولوجيا الجهاز الهضمي.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">تم الرفع: أسبوع مضى</small>
+                            <span class="badge bg-secondary">DOCX</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fas fa-download"></i> تحميل</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fas fa-info-circle"></i> التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-header bg-light">
+                        <span class="badge bg-danger">السنة الرابعة</span>
+                        <span class="badge bg-info ms-1">أمراض</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">امتحانات سابقة لأمراض القلب</h5>
+                        <p class="card-text text-muted">5 امتحانات سابقة مع حلولها النموذجية لمادة أمراض القلب.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">تم الرفع: أسبوعين مضوا</small>
+                            <span class="badge bg-secondary">ZIP</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fas fa-download"></i> تحميل</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fas fa-info-circle"></i> التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- المزيد من البطاقات... -->
+        </div>
+
+        <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">السابق</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">التالي</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2023 منصة طلبة الطب - جميع الحقوق محفوظة</p>
+            <div class="social-links mt-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
